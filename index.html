@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        #more{
+            display: none;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Sign Up</h1>
+    <form action="" id="formSubmit">
+      <label for="firstName">First Name</label>
+      <input type="text" name="firstName" /> <br /><br />
+      <label for="lastName">Last Name</label>
+      <input type="text" name="lastName" /> <br /><br />
+      <label for="email">Email</label>
+      <input type="text" name="email" /> <br /><br />
+      <button type="submit" name="submit">Submit</button>
+    </form>
+    <div class="out">
+      <code>
+        <p>First Name:</p>
+        <p>Last Name:</p>
+        <p>Email:</p>
+      </code>
+    </div>
+
+    <div id="content">
+        <p>Some details about the item.</p>
+        <p id="more" style="display:none">Full details about the item.</p>
+        <button onclick="showMore()" id="btn">Read more</button>
+      </div>
+      
+    <script src="ch49.js"></script>
+    <script src="ch50.js"></script>
+  </body>
+</html>
